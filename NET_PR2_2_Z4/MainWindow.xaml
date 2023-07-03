@@ -1,0 +1,202 @@
+﻿<Window
+    x:Class="NET_PR2_2_Z4.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:NET_PR2_2_Z4"
+    mc:Ignorable="d"
+        
+    Title="MainWindow"
+    Height="680"
+    Width="450"
+    FontSize="24"
+    >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock
+            Grid.ColumnSpan="4"
+            TextAlignment="Right"
+            Text="{Binding Bufory}"
+            />
+        <TextBlock
+            Grid.ColumnSpan="4"
+            Grid.Row="1"
+            TextAlignment="Right"
+            FontSize="32"
+            Text="{Binding Wynik}"
+            />
+
+
+        <Button
+            Grid.Column="5"
+            Grid.Row="2"
+            Click="DziałanieDwuargumentowe"
+            >Mod</Button>
+        <Button
+            Grid.Column="5"
+            Grid.Row="3"
+            Click="DziałanieJednoargumentowe"
+            >Silnia</Button>
+        <Button
+            Grid.Column="5"
+            Grid.Row="4"
+            Click="DziałanieJednoargumentowe"
+            >Góra</Button>
+        <Button
+            Grid.Column="5"
+            Grid.Row="5"
+            Click="DziałanieJednoargumentowe"
+            >Dół</Button>
+        <Button
+            Grid.Column="5"
+            Grid.Row="6"
+            Click="DziałanieDwuargumentowe"
+            >Log</Button>
+
+
+        <Button
+            Grid.Row="2"
+            >%</Button>
+        <Button
+            Grid.Column="1"
+            Grid.Row="2"
+            Click="CzyszczenieWyniku"
+            >CE</Button>
+        <Button
+            Grid.Column="2"
+            Grid.Row="2"
+            Click="Czyszczenie"
+            >C</Button>
+        <Button
+            Grid.Column="3"
+            Grid.Row="2" Click="KasowanieZnaku"
+            >⌫</Button>
+
+        <Button
+            Grid.Row="3" Click="DziałanieJednoargumentowe"
+            >1/x</Button>
+        <Button
+             Click="DziałanieDwuargumentowe"
+            Grid.Column="1"
+            Grid.Row="3"
+            >xʸ</Button>
+        <Button
+            Click="DziałanieJednoargumentowe"
+            Grid.Column="2"
+            Grid.Row="3"
+            >√</Button>
+        <Button
+            Click="DziałanieDwuargumentowe"
+            Grid.Column="3"
+            Grid.Row="3"
+            >÷</Button>
+
+        <Button
+            Style="{DynamicResource StylCyfry}"
+            Grid.Row="4"
+            Click="Cyfra"
+            >7</Button>
+        <Button
+            Style="{DynamicResource StylCyfry}"
+            Grid.Column="1"
+            Grid.Row="4"
+            Click="Cyfra"
+            >8</Button>
+        <Button
+            Style="{DynamicResource StylCyfry}"
+            Grid.Column="2"
+            Grid.Row="4"
+            Click="Cyfra"
+            >9</Button>
+        <Button
+            Click="DziałanieDwuargumentowe"
+            Grid.Column="3"
+            Grid.Row="4"
+            >×</Button>
+
+        <Button
+            Style="{DynamicResource StylCyfry}"
+            Grid.Row="5"
+            Click="Cyfra"
+            >4</Button>
+        <Button
+            Style="{DynamicResource StylCyfry}"
+            Grid.Column="1"
+            Grid.Row="5"
+            Click="Cyfra"
+            >5</Button>
+        <Button
+            Style="{DynamicResource StylCyfry}"
+            Grid.Column="2"
+            Grid.Row="5"
+            Click="Cyfra"
+            >6</Button>
+        <Button
+            Click="DziałanieDwuargumentowe"
+            Grid.Column="3"
+            Grid.Row="5"
+            >-</Button>
+
+        <Button
+            Style="{DynamicResource StylCyfry}"
+            Grid.Row="6"
+            Click="Cyfra"
+            >1</Button>
+        <Button
+            Style="{DynamicResource StylCyfry}"
+            Grid.Column="1"
+            Grid.Row="6"
+            Click="Cyfra"
+            >2</Button>
+        <Button
+            Style="{DynamicResource StylCyfry}"
+            Grid.Column="2"
+            Grid.Row="6"
+            Click="Cyfra"
+            >3</Button>
+        <Button
+            Grid.Column="3"
+            Grid.Row="6" Click="DziałanieDwuargumentowe"
+            >+</Button>
+
+        <Button
+            Style="{DynamicResource StylCyfry}"
+            Grid.Row="7"
+            Click="Znak"
+            >+/-</Button>
+        <Button
+            Style="{DynamicResource StylCyfry}"
+            Grid.Column="1"
+            Grid.Row="7"
+            Click="Cyfra"
+            >0</Button>
+        <Button
+            Style="{DynamicResource StylCyfry}"
+            Grid.Column="2"
+            Grid.Row="7"
+            Click="Przecinek"
+            >,</Button>
+        <Button
+            Grid.Column="3"
+            Grid.Row="7" Click="RównaSię"
+            >=</Button>
+    </Grid>
+</Window>
